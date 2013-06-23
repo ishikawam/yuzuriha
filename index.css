@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/*--------------------------------------
+　トップページCSS
+---------------------------------------*/
+#bg_main_image{
+	width : 665px;
+	height : 322px;
+	background : url(bg_main_image.gif) 0% 0% / auto auto no-repeat scroll padding-box border-box transparent;
+	position: relative;
+	margin: 0 0 20px 0;
+}
+#main_image{
+	width : 650px;
+	height : 316px;
+	padding: 5px;
+	background : url(web.jpg) 0% 0% / auto auto no-repeat scroll padding-box border-box transparent;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+#main_image p{
+	line-height: 160%;
+}
+#top div#info{
+	background : url(bg_info_main.gif) 0% 0% / auto auto repeat-y scroll padding-box border-box transparent;
+	}
+#top div#info h2{
+	margin:0;
+	text-indent:0;
+	background:none;
+	}
+#top div#info div#info_inner{
+	margin:0 1px 0 1px;
+	overflow:auto;
+	height : 172px;
+	}
+#top div#info div#info_inner h3{
+	border-width:0;
+	margin:5px 5px 0 5px;
+	text-indent:0;
+	background:none;
+	font-size:100%;
+	color:#0099CC;
+	font-weight:normal;
+	height:auto;
+	line-height:1.0em;
+}
+#top div#info div#info_inner p{
+	line-height:150%;
+	margin:0 5px 12px 5px;
+}
