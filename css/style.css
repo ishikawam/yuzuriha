@@ -80,7 +80,7 @@ a:active {
 }
 
 .row,.row-fluid {
-	margin-bottom:30px;
+	margin-bottom:20px;
 }
 
 .row .row,.row-fluid .row-fluid{
@@ -481,13 +481,13 @@ ul.nav li.dropdown a {
 /* Caption styles */
 .nivo-caption {
 	position:absolute;
-	left:80px;
+	left:70px;
 	bottom:20px;
 	background:#000;
 	color:#fff;
-	width:30%;
+	width:35%;
 	z-index:8;
-	padding: 20px;
+	padding: 20px 0px 20px 20px;
 	opacity: 0.8;
 	overflow: hidden;
 	display: none;
@@ -501,10 +501,13 @@ ul.nav li.dropdown a {
 .nivo-caption  h2 {
 	color:#fff;
 	font-size:26px;
-	line-height:1em;
+	line-height:1.2em;
+	margin-bottom:10px;
 }
 .nivo-caption  p {
 	margin-bottom:20px;
+	font-size:12px;
+	line-height:1.6em;
 }
 .nivo-caption a {
 	display:inline !important;
