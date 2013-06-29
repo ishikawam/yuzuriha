@@ -34,10 +34,14 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
     <link rel="shortcut icon" href="ico/favicon.png" />
+
+    <!-- IE互換表示オフ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 </head>
 
 <body>
-<!-- options panel 
+<!--
+ options panel 
 <div id="t_options"> 
 	<div class="options_inner">
 		<div class="options_toggle_holder">
@@ -140,7 +144,8 @@
 	</div>
 <div id="custom_styles"></div>
 </div>
-<!-- end of options panel -->
+ end of options panel 
+-->
 
 <div id="wrapper">
 	
@@ -269,41 +274,35 @@
 								<div class="navigation">
 								<nav>
 									<ul class="nav topnav">
-										<li class="active">
-										<a href="index.html">トップ</i></a>
+<?
+$page = basename($_SERVER["PHP_SELF"], '.html');
+?>
+										<li class="<? if($page == 'index') { ?>active<? } ?>">
+										<a href="index.html">トップ</a>
 										</li>
-										<li class="dropdown">
-										<a href="#">ゆずりはとは <i class="icon-angle-down"></i></a>
-										<ul class="dropdown-menu">
-											<li><a href="about.html">ゆずりはとは</a></li>
-											<li><a href="besmilepresents.html">Be Smile Presents</a></li>
-											<li><a href="junbi.html">応援してくださる方々</a></li>
-										</ul>
+										<li class="<? if($page == 'about') { ?>active<? } ?>">
+										<a href="about.html">ゆずりはとは</a>
 										</li>
-										<li class="dropdown">
-										<a href="#">プログラム <i class="icon-angle-down"></i></a>
-										<ul class="dropdown-menu">
-											<li><a href="1.html">第一部 映画『ゆずり葉』</a></li>
-											<li><a href="2.html">第二部 ライブパフォーマンス</a></li>
-										</ul>
+										<li class="<? if($page == 'program') { ?>active<? } ?>">
+										<a href="program.html">プログラム</a>
 										</li>
 										<li class="dropdown">
 										<a href="#">お申込み <i class="icon-angle-down"></i></a>
 										<ul class="dropdown-menu">
-											<li><a href="https://ws.formzu.net/fgen/S46045425/">パソコンから</a></li>
-											<li><a href="https://ws.formzu.net/mfgen/S46045425/">携帯から</a></li>
+											<li><a target="_blank" href="https://ws.formzu.net/fgen/S46045425/">パソコンから</a></li>
+											<li><a target="_blank" href="https://ws.formzu.net/mfgen/S46045425/">携帯から</a></li>
 										</ul>
 										</li>
 
 										<li class="dropdown">
 										<a href="#">ブログ <i class="icon-angle-down"></i></a>
 										<ul class="dropdown-menu">
-											<li><a href="http://ameblo.jp/besmilepresents/">アメーバブログ</a></li>
-											<li><a href="https://www.facebook.com/BeSmilePresents">Facebookページ</a></li>
+											<li><a target="_blank" href="http://ameblo.jp/besmilepresents/">アメーバブログ</a></li>
+											<li><a target="_blank" href="https://www.facebook.com/BeSmilePresents">Facebookページ</a></li>
 										</ul>
 										</li>
 
-										<li>
+										<li class="<? if($page == 'contact') { ?>active<? } ?>">
 										<a href="contact.html">お問い合わせ </a>
 										</li>
 <!--

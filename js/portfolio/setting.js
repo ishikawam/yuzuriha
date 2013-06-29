@@ -31,7 +31,7 @@ this.title = '<h4>' + this.title + '</h4>' + '<p>' +
 $(this.element).parent().find('img').attr('alt') + '</p>';
 },
 helpers : {
-title : { type: 'inside' },
+title : { type: 'inside' }
 }
 });
 

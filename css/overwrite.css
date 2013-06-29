@@ -1,6 +1,6 @@
 /* === Typography === */
 h1, h2, h3, h4, h5, h6{
-	font-family: 'Open Sans', sans-serif;
+/*	font-family: 'Open Sans', sans-serif;*/
 	color:#353535;
 	font-weight:300;
 	line-height:1.5em;
@@ -13,6 +13,7 @@ h1{
 }
 
 h2{
+	font-family:"メイリオ", Meiryo,  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size:42px;
 	margin-bottom:22px;
 }
@@ -498,6 +499,7 @@ dd {
 
 
 .btn {
+	font-family:"メイリオ", Meiryo,  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 12px;
   text-transform:uppercase;
   text-shadow: none;

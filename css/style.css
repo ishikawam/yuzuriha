@@ -39,9 +39,26 @@
 1. General
 ==================================== */
 
+* {
+/*
+	font-family:'Open Sans', Arial, 'Hiragino Mincho ProN', 'メイリオ', Meiryo, 'MS PMincho', serif;
+
+	font-family:"ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+	font-family:"メイリオ", Meiryo,  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+*/
+}
+.meiryo {
+	font-family:"メイリオ", Meiryo,  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.green {
+	color:#3EA236;
+}
+
+/*******/
+
+
 body {
-/*	font-family:'Open Sans', Arial, 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', sans-serif; */
-	font-family:'Open Sans', Arial, 'Hiragino Mincho ProN', Meiryo, 'MS PMincho', serif;
+	font-family:"メイリオ", Meiryo,  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size:14px;
 	font-weight:300;
 	line-height:1.6em;
@@ -485,7 +502,8 @@ ul.nav li.dropdown a {
 	bottom:20px;
 	background:#000;
 	color:#fff;
-	width:35%;
+/*	width:30%;*/
+    width:520px;
 	z-index:8;
 	padding: 20px 0px 20px 20px;
 	opacity: 0.8;
@@ -878,13 +896,13 @@ form#commentform textarea {
 }
 
 .item-thumbs a + img {
-	width: 100%;	
+	width: 80%;	
 }
 
 .item-thumbs .hover-wrap {
 	position: absolute;
 	display: block;
-	width: 100%;
+	width: 80%;
 	height: 100%;
 	
 	opacity: 0;
@@ -1157,9 +1175,11 @@ ul.clients li img:hover {
 
 /* --- Map --- */
 .map{
+/*
 	position:relative;
 	margin-top:-50px;
 	margin-bottom:40px;
+*/
 }
 
 .map iframe{
@@ -2193,7 +2213,8 @@ article img.pull-right, article .align-right{
 	}
 	
 	.nivo-caption {
-		width:50%;
+/*		width:50%;*/
+width: 520px;
 	}
 	
 	/* slitslider */
@@ -2235,6 +2256,12 @@ article img.pull-right, article .align-right{
 }
 
 @media (max-width: 767px) {
+
+/* 縮小 */
+.item-thumbs {
+	float: left;
+	width: 25%;
+}
 
   body {
     padding-right: 0;
@@ -2365,7 +2392,8 @@ article img.pull-right, article .align-right{
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
+/*@media (max-width: 480px) {*/
 
 	header .logo {
 		margin:0 auto;
