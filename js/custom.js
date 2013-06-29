@@ -104,12 +104,13 @@ jQuery(document).ready(function($) {
 		$('.social-network li a, .options_box .color a').tooltip();
 
 		// fancybox
-		$(".fancybox").fancybox({				
+		$(".fancybox").fancybox({
 				padding : 0,
+				minWidth: 400,
 				autoResize: true,
 				beforeShow: function () {
 					this.title = $(this.element).attr('title');
-					this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
+					this.title = '<h4>' + this.title + '</h4>' + '<div>' + $(this.element).parent().find('img').attr('alt') + '</div>';
 				},
 				helpers : {
 					title : { type: 'inside' }
@@ -142,16 +143,17 @@ jQuery(document).ready(function($) {
 		
 	
 		//TWITTER
+/*
 		getTwitters('twitter', {
-			id: 'wrapbootstrap',
+			id: 'BeSmilePresents',
 			count: 1,
 			enableLinks: true,
 			ignoreReplies: false,
 			template: '<i class="icon-twitter icon-circled icon-48 active"></i><br /><span class="twitterPrefix"><span class="twitterStatus">%text%</span><br /><em class="twitterTime"><a href="http://twitter.com/%user_screen_name%/statuses/%id_str%">Date - %time%</a></em>',
 			newwindow: true
 		});
+*/
 
-	
 		//flexslider
 		$('.flexslider').flexslider();
 	
