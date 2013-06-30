@@ -1,0 +1,3 @@
+
+RewriteEngine on
+RewriteRule (.*) http://yuzuriha.boobie.jp/ [R=301,L]
