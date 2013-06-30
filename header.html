@@ -40,6 +40,16 @@
 </head>
 
 <body>
+<!-- facebook social button -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <!--
  options panel 
 <div id="t_options"> 
@@ -264,7 +274,7 @@
 			<div class="row">
 				<div class="span4">
 					<div class="logo">
-						<a href="index.html"><img src="img/logo.png" alt="ゆずりは" class="logo" /></a><br style="clear:both;"/>
+						<a href="./"><img src="img/logo.png" alt="ゆずりは" class="logo" /></a><br style="clear:both;"/>
 						<h1 style="font-size:13px">〜僕からきみへ　君から未来へ　希望の彼方へ〜</h1>
 					</div>
 				</div>
@@ -278,7 +288,7 @@
 $page = basename($_SERVER["PHP_SELF"], '.html');
 ?>
 										<li class="<? if($page == 'index') { ?>active<? } ?>">
-										<a href="index.html">トップ</a>
+										<a href="./">トップ</a>
 										</li>
 										<li class="<? if($page == 'about') { ?>active<? } ?>">
 										<a href="about.html">ゆずりはとは</a>
