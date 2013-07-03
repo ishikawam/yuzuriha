@@ -23,18 +23,28 @@
 			<div class="row">
 
 				<div class="span6">
-
+<? 
+$array = array();
+$array[] = '
+                  <h6>高橋明(スポーツNPO理事長・顧問)</h6>
+                  <iframe width="100%" height="300" src="//www.youtube.com/embed/QQ8fdS3s7Ho" frameborder="0" allowfullscreen></iframe>
+                  <p><a target="_blank" href="http://www15.ocn.ne.jp/~takira/profile.html">→ホームページ</a></p>
+';
+$array[] = '
 				  <h6>岩崎靖子(映画プロデューサー・映画監督)</h6>
-
                   <iframe width="100%" height="300" src="//www.youtube.com/embed/vWf7ip-4bn8" frameborder="0" allowfullscreen></iframe>
                   <p><a target="_blank" href="http://ohanashi-daisuki.com/sp/bk11.html">→ホームページ</a></p>
-
-
+';
+$array[] = '
                   <h6>南ぬ風人まーちゃんうーぽー(音楽アーティスト)</h6>
                   <iframe width="100%" height="300" src="//www.youtube.com/embed/gX30lNd8p94" frameborder="0" allowfullscreen></iframe>
                   <p><a target="_blank" href="http://painukaji.com/">→ホームページ</a></p>
-
-
+';
+shuffle($array);
+foreach ($array as $val) {
+  echo $val;
+}
+?>
 				</div>	
 
 				<div class="span6">
