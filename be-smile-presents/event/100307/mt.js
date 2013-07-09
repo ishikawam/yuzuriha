@@ -210,7 +210,7 @@ function mtFetchUser(cb) {
         mtFetchedUser = true;
         var script = document.createElement('script');
         var ts = new Date().getTime();
-        script.src = 'http://be-smile-presents.net/cgi-bin/mt/mt-comments.cgi?__mode=session_js&blog_id=3&jsonp=' + cb + '&ts=' + ts;
+        script.src = 'http://yuzuriha.boobie.jp/be-smile-presents/cgi-bin/mt/mt-comments.cgi?__mode=session_js&blog_id=3&jsonp=' + cb + '&ts=' + ts;
         (document.getElementsByTagName('head'))[0].appendChild(script);
     }
 }
@@ -341,7 +341,7 @@ mtAttachEvent('usersignin', mtUserOnLoad);
 function mtSignIn() {
     var doc_url = document.URL;
     doc_url = doc_url.replace(/#.+/, '');
-    var url = 'http://be-smile-presents.net/cgi-bin/mt/mt-comments.cgi?__mode=login&blog_id=3';
+    var url = 'http://yuzuriha.boobie.jp/be-smile-presents/cgi-bin/mt/mt-comments.cgi?__mode=login&blog_id=3';
     if (is_preview) {
         if ( document['comments_form'] ) {
             var entry_id = document['comments_form'].entry_id.value;
@@ -386,7 +386,7 @@ function mtSignOut(entry_id) {
     mtClearUser();
     var doc_url = document.URL;
     doc_url = doc_url.replace(/#.+/, '');
-    var url = 'http://be-smile-presents.net/cgi-bin/mt/mt-comments.cgi?__mode=handle_sign_in&static=0&logout=1';
+    var url = 'http://yuzuriha.boobie.jp/be-smile-presents/cgi-bin/mt/mt-comments.cgi?__mode=handle_sign_in&static=0&logout=1';
     if (is_preview) {
         if ( document['comments_form'] ) {
             var entry_id = document['comments_form'].entry_id.value;

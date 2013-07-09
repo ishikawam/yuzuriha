@@ -31,10 +31,10 @@ img {
 	padding: 0px 5px ;
 	margin: 0px auto ;
 	text-align: center ;
-	background: url("http://be-smile-presents.net/event/100307/monster-img/gra.png") top center no-repeat ;
+	background: url("http://yuzuriha.boobie.jp/be-smile-presents/event/100307/monster-img/gra.png") top center no-repeat ;
 	background-attachment: fixed;
 	_background: none ;
-	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://be-smile-presents.net/event/100307/monster-img/gra.png',sizingMethod=crop);
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://yuzuriha.boobie.jp/be-smile-presents/event/100307/monster-img/gra.png',sizingMethod=crop);
 }
 
 
@@ -44,14 +44,14 @@ img {
 	width: 950px ;
 	margin: auto ;
 	text-align: left ;
-	background: #fff url("http://be-smile-presents.net/event/100307/monster-img/bg_container.gif") repeat-y;
+	background: #fff url("http://yuzuriha.boobie.jp/be-smile-presents/event/100307/monster-img/bg_container.gif") repeat-y;
 }
 
 
 
 #content {
 	position: relative ;
-	background: url("http://be-smile-presents.net/event/100307/monster-img/header_gra.gif") no-repeat ;
+	background: url("http://yuzuriha.boobie.jp/be-smile-presents/event/100307/monster-img/header_gra.gif") no-repeat ;
 }
 
 
@@ -78,9 +78,9 @@ html > body #content-inner {
 	top: 10px ;
 	height: 50px ;
 	padding: 10px 15px 20px ;
-	background: url("http://be-smile-presents.net/event/100307/monster-img/footer.png") no-repeat;
+	background: url("http://yuzuriha.boobie.jp/be-smile-presents/event/100307/monster-img/footer.png") no-repeat;
 	_background: none ;
-	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://be-smile-presents.net/event/100307/monster-img/footer.png',sizingMethod=crop);
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://yuzuriha.boobie.jp/be-smile-presents/event/100307/monster-img/footer.png',sizingMethod=crop);
 }
 
 
@@ -126,7 +126,7 @@ html > body #content-inner {
 #header {
 	position: relative;
 	height: 200px ;
-	background: url("http://be-smile-presents.net/event/100307/monster-img/header.jpg") no-repeat bottom ;
+	background: url("http://yuzuriha.boobie.jp/be-smile-presents/event/100307/monster-img/header.jpg") no-repeat bottom ;
 }
 
 
@@ -186,9 +186,9 @@ html > body #content-inner {
 	height: 44px ;
 	width: 100% ;
 	z-index: 3;
-	background: url("http://be-smile-presents.net/event/100307/monster-img/calendar.png") no-repeat top left;
+	background: url("http://yuzuriha.boobie.jp/be-smile-presents/event/100307/monster-img/calendar.png") no-repeat top left;
 	_background: none ;
-	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://be-smile-presents.net/event/100307/monster-img/calendar.png',sizingMethod=crop);
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://yuzuriha.boobie.jp/be-smile-presents/event/100307/monster-img/calendar.png',sizingMethod=crop);
 }
 
 
@@ -253,7 +253,7 @@ html > body #content-inner {
 	border-right: none ;
 	font-weight: normal ;
 	font-size : 12px ;
-	background: url("http://be-smile-presents.net/event/100307/monster-img/bg_ent_t.jpg") repeat-x center ;
+	background: url("http://yuzuriha.boobie.jp/be-smile-presents/event/100307/monster-img/bg_ent_t.jpg") repeat-x center ;
 }
 
 
@@ -449,7 +449,7 @@ html > body #content-inner {
 	padding: 9px ;
 	font-size: 12px ;
 	font-weight: normal ;
-	background: url("http://be-smile-presents.net/event/100307/monster-img/side_t.jpg") center repeat-x ;
+	background: url("http://yuzuriha.boobie.jp/be-smile-presents/event/100307/monster-img/side_t.jpg") center repeat-x ;
 }
 
 

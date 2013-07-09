@@ -266,7 +266,7 @@ MT.util = function () {
     commentsTotalPages = Math.ceil(totalComments / commentsPerPage);
     pageNum = 1;
     
-    loadingIcon = "<img title='Loading...' src='http://be-smile-presents.net/cgi-bin/mt/mt-static/images/indicator.white.gif' alt='Loading' />";
+    loadingIcon = "<img title='Loading...' src='http://yuzuriha.boobie.jp/be-smile-presents/cgi-bin/mt/mt-static/images/indicator.white.gif' alt='Loading' />";
     
     commentContentDiv = M.getEl("comments-content");
     topNav = M.getEl("top-comment-nav");
@@ -437,7 +437,7 @@ MT.util = function () {
     _setCommentOffset();
     
     jsonUrl = [
-        "http://be-smile-presents.net/cgi-bin/mt/mt-comments.cgi?__mode=comment_listing&direction=",
+        "http://yuzuriha.boobie.jp/be-smile-presents/cgi-bin/mt/mt-comments.cgi?__mode=comment_listing&direction=",
         direction,
         "&entry_id=",
         entryID,
@@ -646,7 +646,7 @@ function mtFetchUser(cb) {
         mtFetchedUser = true;
         var script = document.createElement('script');
         var ts = new Date().getTime();
-        script.src = 'http://be-smile-presents.net/cgi-bin/mt/mt-comments.cgi?__mode=session_js&blog_id=4&jsonp=' + cb + '&ts=' + ts;
+        script.src = 'http://yuzuriha.boobie.jp/be-smile-presents/cgi-bin/mt/mt-comments.cgi?__mode=session_js&blog_id=4&jsonp=' + cb + '&ts=' + ts;
         (document.getElementsByTagName('head'))[0].appendChild(script);
     }
 }
@@ -779,7 +779,7 @@ mtAttachEvent('usersignin', mtUserOnLoad);
 function mtSignIn() {
     var doc_url = document.URL;
     doc_url = doc_url.replace(/#.+/, '');
-    var url = 'http://be-smile-presents.net/cgi-bin/mt/mt-cp.cgi?__mode=login&blog_id=4';
+    var url = 'http://yuzuriha.boobie.jp/be-smile-presents/cgi-bin/mt/mt-cp.cgi?__mode=login&blog_id=4';
     if (is_preview) {
         if ( document['comments_form'] ) {
             var entry_id = document['comments_form'].entry_id.value;
@@ -824,7 +824,7 @@ function mtSignOut(entry_id) {
     mtClearUser();
     var doc_url = document.URL;
     doc_url = doc_url.replace(/#.+/, '');
-    var url = 'http://be-smile-presents.net/cgi-bin/mt/mt-cp.cgi?__mode=logout&static=0';
+    var url = 'http://yuzuriha.boobie.jp/be-smile-presents/cgi-bin/mt/mt-cp.cgi?__mode=logout&static=0';
     if (is_preview) {
         if ( document['comments_form'] ) {
             var entry_id = document['comments_form'].entry_id.value;
