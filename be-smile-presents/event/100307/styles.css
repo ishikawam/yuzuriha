@@ -1,0 +1,96 @@
+@import url(common.css);
+/*___
+
+Created by GreenTree Inc.
+http://www.greentree.jp
+
+/* DESIGN CUSTOMIZE : No.MT4-006
+============================================*/
+
+/*BODY*/
+
+body {
+	color: #666 ;
+	background: #dae8d7;
+}
+
+
+a {
+	color: #4988BB ;
+}
+
+
+/*HEAD*/
+
+#header-inner {
+	padding: 40px 50px 0px ;
+	text-align: left ;
+}
+
+
+#header-name a {
+	font-size: 35px ;
+	font-weight: bold ;
+	color: #fff ;
+}
+
+
+#header-description {
+	font-size: 1em ;
+	color: #fff ;
+}
+
+/*CALENDAR*/
+
+#calendar dd {
+	color: #253951 ;
+}
+
+
+#calendar dd a {
+	color: #fff ;
+	background: #004200 ;
+}
+
+
+#calendar dt a {
+	font-weight: bold ;
+	color: #004200 ;
+}
+
+
+/*ENTRYTITLE*/
+
+.asset-name a, .asset-name, .archive-header {
+	font-size: 12px ;
+	color: #004200 ;
+	text-decoration: none ;
+}
+
+
+/*SIDE*/
+
+#beta h4.widget-header, #gamma h4.widget-header {
+	color: #004200 ;
+}
+
+
+.widget-header a {
+	color: #004200 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

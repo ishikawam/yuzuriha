@@ -1,0 +1,660 @@
+/*　BASE DESIGN
+============================================*/
+
+
+/*___DEFAULT___*/
+
+
+body {
+	padding: 0px ;
+	padding-bottom: 50px ;
+	margin: 0px ;
+	font-size: 12px ;
+	font-style: normal ;
+	font-weight: normal ;
+	line-height: 1.5 ;
+	text-align: center ;
+}
+
+
+
+img {
+	border: 0 ;
+}
+
+
+
+/*___LAYOUT___*/
+
+#container {
+	width: 950px ;
+	padding: 0px 5px ;
+	margin: 0px auto ;
+	text-align: center ;
+	background: url("http://be-smile-presents.net/event/100307/monster-img/gra.png") top center no-repeat ;
+	background-attachment: fixed;
+	_background: none ;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://be-smile-presents.net/event/100307/monster-img/gra.png',sizingMethod=crop);
+}
+
+
+
+#container-inner {
+	position: relative ;
+	width: 950px ;
+	margin: auto ;
+	text-align: left ;
+	background: #fff url("http://be-smile-presents.net/event/100307/monster-img/bg_container.gif") repeat-y;
+}
+
+
+
+#content {
+	position: relative ;
+	background: url("http://be-smile-presents.net/event/100307/monster-img/header_gra.gif") no-repeat ;
+}
+
+
+
+#content-inner {
+	height: 1% ;
+	padding: 15px ;
+	margin: auto ;
+}
+
+
+
+html > body #content-inner {
+	height: auto ;
+	width: 920px ;
+	overflow: hidden ;
+}
+
+
+
+#footer {
+	position: relative ;
+	clear: both ;
+	top: 10px ;
+	height: 50px ;
+	padding: 10px 15px 20px ;
+	background: url("http://be-smile-presents.net/event/100307/monster-img/footer.png") no-repeat;
+	_background: none ;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://be-smile-presents.net/event/100307/monster-img/footer.png',sizingMethod=crop);
+}
+
+
+/*___FLOAT___*/
+
+#alpha, #beta, #gamma {
+	float: left;
+	overflow: hidden;
+}
+
+
+
+#alpha {
+	width: 540px;
+	margin-right: 10px ;
+}
+
+
+
+#alpha-inner {
+	position: relative ;
+}
+
+
+
+#beta {
+	left: 0px;
+	width: 180px;
+	margin-right: 10px ;
+}
+
+
+
+#gamma {
+	left: 0px;
+	width: 180px;
+}
+
+
+
+/*___HEADER___*/
+
+#header {
+	position: relative;
+	height: 200px ;
+	background: url("http://be-smile-presents.net/event/100307/monster-img/header.jpg") no-repeat bottom ;
+}
+
+
+
+
+#header h1, #header h2 {
+	position: relative ;
+	padding: 0 ;
+	margin: 0 ;
+	z-index: 1 ;
+}
+
+
+
+#header #header-name a {
+	line-height: 1 ;
+	text-decoration: none ;
+}
+
+
+
+#header #header-description {
+	font-weight: normal ;
+}
+
+
+
+/*___CALENDAR___*/
+
+#calendar {
+	position: absolute ;
+	left: 0px ;
+	top: 160px ;
+	width: 100% ;
+	z-index: 2 ;
+}
+
+
+
+#calendar * {
+	padding: 0 ;
+	margin: 0 ;
+}
+
+
+
+#calendarBg p {
+	display: none ;
+}
+
+
+
+#calendarBg {
+	position: absolute ;
+	left: 0px ;
+	top: 0px ;
+	height: 44px ;
+	width: 100% ;
+	z-index: 3;
+	background: url("http://be-smile-presents.net/event/100307/monster-img/calendar.png") no-repeat top left;
+	_background: none ;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://be-smile-presents.net/event/100307/monster-img/calendar.png',sizingMethod=crop);
+}
+
+
+
+#calendar dl{
+	position: absolute ;
+	height: 44px ;
+	width: 950px ;
+	padding-top: 14px ;
+	margin: 0 ;
+	z-index: 4 ;
+	background: none ;
+}
+
+
+
+#calendar a {
+	text-decoration: none ;
+}
+
+
+
+#calendar dt {
+	float: left ;
+	width: 10em ;
+	padding-left: 1.5em ;
+	font-weight: bold ;
+	display: block ;
+	text-align: left ;
+}
+
+
+
+#calendar dd{
+	position: relative ;
+	display: inline ;
+	text-align: center ;
+}
+
+
+
+#calendar dd span {
+	padding: 0.1em 0.25em  ;
+	margin-right: 3px ;
+}
+
+
+
+#calendar dd a {
+	padding: 0.1em 0.25em  ;
+	margin-right: 3px ;
+	text-decoration: none ;
+}
+
+
+
+/*___ENTRY___*/
+
+.asset-name, .archive-header {
+	padding: 15px 12px 13px;
+	margin-bottom: 5px;
+	border-right: none ;
+	font-weight: normal ;
+	font-size : 12px ;
+	background: url("http://be-smile-presents.net/event/100307/monster-img/bg_ent_t.jpg") repeat-x center ;
+}
+
+
+
+.asset-name a {
+	text-decoration: none ;
+}
+
+
+
+.asset-content {
+	margin-bottom: 10px ;
+	background: transparent ;
+}
+
+
+
+.asset-body {
+	height: 1% ;
+	padding: 30px 0px 0px ;
+	overflow: hidden ;
+	text-align: justify ;
+}
+
+
+
+.asset-body p {
+	margin: 0px 0px 0.6em ;
+}
+
+
+
+.asset-header .asset-meta {
+	position: absolute ;
+	right: 5px ;
+	text-align: right ;
+}
+
+
+
+.asset-header .asset-meta .byline address {
+	padding-right: 10px ;
+	font-style: normal;
+	display: inline ;
+}
+
+
+
+
+/*___COMMENT_TRACKBACK___*/
+
+#trackbacks, #comments {
+	margin-bottom: 15px ;
+}
+
+
+
+.comment, .trackback {
+	height: 1% ;
+	border-bottom: 1px solid #dcdcdc ;
+}
+
+
+
+.comment .inner, .trackback .inner {
+	margin-top: 10px ;
+	margin-bottom: 10px ;
+}
+
+
+
+.comment p, .trackback p {
+	margin: 3px auto ;
+}
+
+
+
+.trackback-header .asset-meta {
+	background: #efefeb ;
+}
+
+
+
+.trackbacks-info p {
+	margin: 0 ;
+}
+
+
+
+.trackbacks-info {
+	padding-bottom: 10px ;
+	border-bottom: 1px solid #dcdcdc ;
+}
+
+
+
+#comment-url {
+	width: 400px ;
+}
+
+
+
+#comment-text {
+	height: 100px ;
+	width: 530px ;
+	font-size: 12px ;
+	color: #333 ;
+}
+
+
+
+/*___ARCHIVE___*/
+
+
+.archive-title, .trackbacks-header, .comments-header, .comments-open-header, .comments-open-header, .entry-categories-header, .mt-comment-confirmation h1#page-title, .search-results-header {
+	padding: 3px ;
+	margin-bottom: 10px ;
+	border-bottom: 1px solid #c8c8c8 ;
+	font-size: 12px !important;
+	font-weight: normal ;
+	color: #666 ;
+	background: #E6E7E2 ;
+}
+
+
+
+.entry-categories, .entry-tags {
+	padding: 5px 0px ;
+	border-top: 1px dotted #c8c8c8 ;
+}
+
+
+.entry-categories *, .entry-tags * {
+	padding-right: 0 2px 0 0 ;
+	margin: 0 ;
+	font-size: 12px ;
+	display: inline ;
+}
+
+
+.entry-categories li, .entry-tags li {
+	list-style-type: none ;
+}
+
+
+
+.archive-title em {
+	padding-right: 5px ;
+	font-style: normal ;
+	font-weight: bold ;
+}
+
+
+
+.archive-list {
+	margin-top: 10px ;
+	margin-bottom: 15px ;
+}
+
+
+.content-nav {
+	padding-top: 5px ;
+	border-top: 1px solid #c8c8c8 ;
+	text-align: center ;
+}
+
+
+/*___BETA-GAMMA___*/
+
+
+#beta ul, #gamma ul {
+	padding-left: 0px ;
+	margin-left: 10px ;
+}
+
+
+#beta ul ul, #gamma ul ul {
+	padding-bottom: 5px ;
+	padding-left: 5px ;
+}
+
+
+
+#beta .widget-content, #gamma .widget-content {
+	margin: 10px ;
+	clear : both ;
+}
+
+
+
+#beta h4.widget-header, #gamma h4.widget-header {
+	clear: both ;
+	padding: 9px ;
+	font-size: 12px ;
+	font-weight: normal ;
+	background: url("http://be-smile-presents.net/event/100307/monster-img/side_t.jpg") center repeat-x ;
+}
+
+
+
+.mtblog-beta-inner {
+	position: absolute ;
+	right: 0px ;
+	bottom: 0px ;
+	height: 0px ;
+	padding-top: 10px ;
+	overflow: hidden ;
+	font-size: 10px ;
+}
+
+
+
+.widget-search form {
+	text-align: center ;
+}
+
+
+
+.widget-search form input {
+	width: 150px ;
+	margin-bottom: 2px ;
+	font-size: 12px ;
+}
+
+
+
+/*___GT-Head___*/
+
+.gtHeader * {
+	padding: 0 ;
+	margin: 0 ;
+	font-size: 10px ;
+}
+
+
+
+.gtHeader {
+	position: absolute ;
+	top: 5px ;
+	right: 5px;
+	height: 0px ;
+	padding-top: 1em ;
+	overflow: hidden ;
+	z-index: 1;
+	font-size: 10px ;
+}
+
+
+
+
+/*___MTM-LOGO___*/
+.mt-monster {
+	margin-bottom: 10px ;
+	margin-left: 10px ;
+}
+
+
+
+/*___PHOTO___*/
+
+div.widget-assets div.widget-content ul.widget-list {
+	margin-right: 0;
+	margin-left: -2px ;
+	overflow: hidden ;
+}
+
+
+
+li.item {
+	float: left;
+	width: 70px;
+	margin: 0pt 5px 8px 0px;
+	overflow: hidden;
+	display: table-cell;
+}
+
+
+
+/*___FOOTER___*/
+
+#footer-inner .widget-powered{
+	position: absolute ;
+	left: 15px ;
+	bottom: 20px ;
+}
+
+
+
+#footer-content a {
+	color: #666 ;
+	text-decoration: none ;
+}
+
+
+
+
+
+
+/*___SEARCH___*/
+
+.mt-search-results .content-nav {
+	padding-top: 5px ;
+	border-top: 1px solid #c8c8c8 ;
+	text-align: right ;
+}
+
+.mt-search-results .head-nav {
+	text-align: right ;
+}
+
+
+
+/* ===TAGCROUD===*/
+
+.widget-tags li a {
+	display: inline ;
+}
+
+#search-results span#current-page {
+	display: block ;
+	text-align: center ;
+}
+
+.widget-tag-cloud .widget-content li {
+	margin: 0 ;
+	line-height: 1.2 ;
+	display: inline !important;
+	white-space: nowrap ;
+}
+
+
+.widget-tag-cloud .widget-content li.rank-10 a {
+	font-size: 1.0em ;
+	color: #909090 ;
+}
+
+.widget-tag-cloud .widget-content li.rank-9 a {
+	font-size: 1.05em ;
+	color: #7e7e7e ;
+}
+
+.widget-tag-cloud .widget-content li.rank-8 a{
+	font-size: 1.1em ;
+	color: #717171 ;
+}
+
+.widget-tag-cloud .widget-content li.rank-7 a {
+	font-size: 1.15em ;
+	color: #616161 ;
+}
+
+.widget-tag-cloud .widget-content li.rank-6 a {
+	font-size: 1.2em ;
+	color: #535353 ;
+}
+
+.widget-tag-cloud .widget-content li.rank-5 a{
+	font-size: 1.25em ;
+	color: #434343 ;
+}
+
+.widget-tag-cloud .widget-content li.rank-4 a {
+	font-size: 1.3em ;
+	color: #343434 ;
+}
+
+.widget-tag-cloud .widget-content li.rank-3 a {
+	font-size: 1.35em ;
+	color: #242424 ;
+}
+
+.widget-tag-cloud .widget-content li.rank-2 a {
+	font-size: 1.4em ;
+	color: #161616 ;
+}
+
+.widget-tag-cloud .widget-content li.rank-1 a {
+	font-size: 1.45em ;
+	color: #050505 ;
+}
+
+.widget-tag-cloud .widget-content li a, 
+.widget-tag-cloud .widget-content li a:hover  {
+	border: none ;
+	font-weight: bold ;
+	text-decoration: none ;
+	display: inline ;
+	background: none ;
+}
+
+.widget-tag-cloud .widget-content li a:hover  {
+	text-decoration : underline ;}
+
+/* non-border */
+
+.widget-syndication .widget-content li a, .widget-recent-comments li a {
+	border: 0 !important ;
+	text-decoration: underline !important ;
+}
+
+
+
+
+
