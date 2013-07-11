@@ -288,35 +288,29 @@
 $page = basename($_SERVER["PHP_SELF"], '.html');
 ?>
 										<li class="<? if($page == 'index') { ?>active<? } ?>">
-										<a href="./">トップ</a>
+										  <a href="./">トップ</a>
 										</li>
 										<li class="<? if($page == 'about') { ?>active<? } ?>">
-										<a href="about.html">ゆずりはとは</a>
+										  <a href="about.html">ゆずりはとは</a>
 										</li>
 										<li class="<? if($page == 'program') { ?>active<? } ?>">
-										<a href="program.html">プログラム</a>
+										  <a href="program.html">プログラム</a>
+										</li>
+										<li class="<? if($page == 'form') { ?>active<? } ?>">
+										  <a href="form.html">お申し込み</a>
 										</li>
 										<li class="dropdown">
-										<a href="#">お申し込み <i class="icon-angle-down"></i></a>
-										<ul class="dropdown-menu">
-											<li><a target="_blank" href="https://ws.formzu.net/fgen/S46045425/">パソコンから</a></li>
-											<li><a target="_blank" href="https://ws.formzu.net/mfgen/S46045425/">携帯から</a></li>
-										</ul>
-										</li>
-
-										<li class="dropdown">
-										<a href="#">ブログ <i class="icon-angle-down"></i></a>
-										<ul class="dropdown-menu">
+										  <a href="#">ブログ <i class="icon-angle-down"></i></a>
+										  <ul class="dropdown-menu">
 											<li><a target="_blank" href="http://ameblo.jp/besmilepresents/">アメーバブログ</a></li>
 											<li><a target="_blank" href="https://www.facebook.com/BeSmilePresents">Facebookページ</a></li>
-										</ul>
+										  </ul>
 										</li>
 										<li class="<? if($page == 'access') { ?>active<? } ?>">
-										<a href="access.html">アクセス </a>
+										  <a href="access.html">アクセス </a>
 										</li>
-
 										<li class="<? if($page == 'contact') { ?>active<? } ?>">
-										<a href="contact.html">お問い合わせ </a>
+										  <a href="contact.html">お問い合わせ </a>
 										</li>
 <!--
 										<li class="dropdown">
