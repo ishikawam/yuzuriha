@@ -211,29 +211,23 @@ DVDにすることを強く望んでいた内容です。<br />
 			    <h4><strong class="green">ゆ</strong>ずりは ボランティアスタッフ</h4>
 
 <?
-$res_dir = opendir( 'img/stuff/' );
+$res_dir = opendir('img/stuff/');
+$file_name_arr = array();
 while( $file_name = readdir( $res_dir ) ){
   if (!preg_match('/\.jpg$/', $file_name)) continue;
+  $file_name_arr[] = $file_name;
+}
+closedir( $res_dir );
+shuffle($file_name_arr);
+foreach ($file_name_arr as $file_name) {
+?>
 
-?>		
 		        <div style="float:left;margin:5px">
 			      <img src="img/stuff/<?= $file_name ?>" alt="" class="img-polaroid" style="width:60px;height:60px" />
 		        </div>
 <?
 }
-closedir( $res_dir );
 ?>
-<!--
-		<div class="span1">
-			<img src="img/dummies/team4.jpg" alt="" class="img-polaroid" />
-			<div class="roles">
-				<p class="lead"><strong>Benny Strongton</strong></p>
-				<p>
-					Coffee maker
-				</p>
-			</div>
-		</div>
--->
 
                 <br style="clear:both;" />
                 <p>他にも、ゆずりははたくさんのスタッフ、協力者に支えられています。</p>
