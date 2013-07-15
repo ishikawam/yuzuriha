@@ -149,8 +149,8 @@ DVDにすることを強く望んでいた内容です。<br />
 
 <h6>フェイスブックやアメブロでも活動情報配信中です！</h6>
 <p>是非とも、「いいね！」を押してくださいね！
-<p>Facebook: <a terget="_blank" href="https://www.facebook.com/BeSmilePresents">https://www.facebook.com/BeSmilePresents</a>
-<p>アメーバブログ: <a terget="_blank" href="http://ameblo.jp/besmilepresents/">http://ameblo.jp/besmilepresents/</a>
+<p>Facebook: <a target="_blank" href="https://www.facebook.com/BeSmilePresents">https://www.facebook.com/BeSmilePresents</a>
+<p>アメーバブログ: <a target="_blank" href="http://ameblo.jp/besmilepresents/">http://ameblo.jp/besmilepresents/</a>
 
 
 				</div>	
@@ -271,7 +271,7 @@ closedir( $res_dir );
 								</div>
 							</div>
 						</div>
-<!--
+<? /*
 						<div class="accordion-group">
 							<div class="accordion-heading">
 								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
@@ -286,6 +286,7 @@ closedir( $res_dir );
 								</div>
 							</div>
 						</div>
+
 						<div class="accordion-group">
 							<div class="accordion-heading">
 								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
@@ -300,14 +301,12 @@ closedir( $res_dir );
 								</div>
 							</div>
 						</div>
--->
+*/ ?>
 
 					</div>	
 				</div>
 				<div class="span6">
 
-					<h4>7月13日 会場でお待ちしています</h4>
-<label>
 <script type="text/javascript"><!--
 function myCountDown( myYear, myMonth, myDay ){
    myNow   = new Date();
@@ -317,6 +316,17 @@ function myCountDown( myYear, myMonth, myDay ){
    return myDayCount;
 }
 myDay = myCountDown( 2013, 7, 13 );
+// --></script>
+
+					<h4>
+<script type="text/javascript"><!--
+if ( myDay <= 0 ) document.write('7月13日 会場でお待ちしています');
+else document.write('ご来場ありがとうございました。');
+// --></script>
+                      
+                    </h4>
+<label>
+<script type="text/javascript"><!--
 if ( myDay < 0 ) document.write('2013/7/13まであと<span style="font-size:30px;" class="green">', myDay*(-1), '日</span>です');
 else if (myDay == 0) document.write('<span style="font-size:30px;" class="green">本日はイベント当日です！</span>');
 else document.write('無事イベントは終了しました。ありがとうございました。');
@@ -328,12 +338,6 @@ else document.write('無事イベントは終了しました。ありがとう�
 					</div>
 <div style="float:left;">6/13</div><div style="float:right;">7/13</div>
 
-<!--
-					<label>2013/7/13まであと</label>
-					<div class="progress progress-success progress-striped active">
-					  <div class="bar" style="width: 60%"></div>
-					</div>
--->
 				</div>					
 			</div>
 		
